@@ -20,13 +20,13 @@ $$
 \approx f(\bar{x}_{t-1},u_t)+F_t(x-\bar{x}_{t-1})\qquad\text{(25)}
 $$
 
-其中，$F_t=\left.\frac{\partial f}{\partial x}\right|_{x=\bar{x}_{t-1},u=u_t}$。则近似得到在上一次卡尔曼估计结果 $\bar{x}_{t-1}$ 处的泰勒一阶逼近的运动方程：
+其中，$`F_t=\left.\frac{\partial f}{\partial x}\right|_{x=\bar{x}_{t-1},u=u_t}`$。则近似得到在上一次卡尔曼估计结果 $\bar{x}_{t-1}$ 处的泰勒一阶逼近的运动方程：
 
 $$
 x_t\approx f(\bar{x}_{t-1},u_t)+F_t(x-\bar{x}_{t-1})+\omega_t
 $$
 
-由之前的真值与预测值的协方差定义得到（其中 $\hat{x}_t=f(\bar{x}_{t-1},u_t)$）：
+由之前的真值与预测值的协方差定义得到（其中 $`\hat{x}_t=f(\bar{x}_{t-1},u_t)`$）：
 
 $$
 \hat{P}_t=E((x_t-\hat{x}_t)(x_t-\hat{x}_t)^T)\qquad\text{(26)}
@@ -60,7 +60,7 @@ $$
 \approx g(\hat{x}_t)+G_t(x-\hat{x}_t)\qquad\text{(31)}
 $$
 
-其中，$G_t=\left.\frac{\partial g}{\partial x}\right|_{x=\hat{x}_t}$。则观测方程在当前时刻预测结果 $\hat{x}_t$ 处的泰勒一阶近似化结果为：
+其中，$`G_t=\left.\frac{\partial g}{\partial x}\right|_{x=\hat{x}_t}`$。则观测方程在当前时刻预测结果 $\hat{x}_t$ 处的泰勒一阶近似化结果为：
 
 $$
 \dot{x}_t\approx g(\hat{x}_t)+G_t(x-\hat{x}_t)+v_t

@@ -71,3 +71,28 @@ $$
 $$
 \dot{P}_t=G_t\hat{P}_tG_t^T+R_t
 $$
+
+
+
+
+### Step1：预测阶段
+
+得到运动预测状态：$`\hat{x}_t=f(\bar{x}_{t-1},u_t)`$
+
+得到当前运动状态协方差：$`\hat{P}_t=F_t\bar{P}_{t-1}F_t^T+Q_t`$
+
+---
+
+### Step2：更新阶段
+
+计算卡尔曼增益：$`K_t=\hat{P}_tG_t^T(G_t\hat{P}_tG_t^T+R_t)^{-1}`$
+
+得到卡尔曼最终估计结果：$`\bar{x}_t=\hat{x}_t+K_t(\dot{x}_t-g(\hat{x}_t))`$
+
+更新卡尔曼最终估计结果协方差：$`\bar{P}_t=\hat{P}_t-K_tG_t\hat{P}_t`$
+
+---
+
+### Step3：结果返回
+
+结果返回：$`\bar{x}_t,\bar{P}_t`$

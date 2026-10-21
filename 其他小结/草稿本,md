@@ -1,1 +1,11 @@
+梯度向量，雅可比矩阵，海森矩阵在非线性最小二乘中的应用  
+## 1. 非线性最小二乘问题
+
+假设参数为：$\mathbf{x}\in\mathbb{R}^n$
+
+有 $m$ 个残差：$\mathbf r(\mathbf x)=\begin{bmatrix} r_1(\mathbf x)\\ r_2(\mathbf x)\\ \vdots\\ r_m(\mathbf x) \end{bmatrix}$
+
+我们的目标是最小化：$\boxed{F(\mathbf x)=\frac12\sum_{i=1}^m r_i(\mathbf x)^2=\frac12\mathbf r(\mathbf x)^T\mathbf r(\mathbf x)}$
+
+这里的目标函数 $F$ 是标量，但残差函数 $\mathbf r$ 是向量。
 

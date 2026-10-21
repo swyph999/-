@@ -105,3 +105,4 @@ $$
 （2) EKF算法的线性化工作点往往不是输入状态真实的均值（上文中也使用上一轮卡尔曼滤波的结果处展开），而是一个估计的均值，这样的偏差会导致计算出的雅可比矩阵也不是最好的。
 
 （3) EKF使用泰勒展开进行线性逼近，但是线性化过程丢弃了许多高阶项，这是为了计算效率而选择了一阶近似，这会导致EKF算法的性能下降，甚至导致滤波器发散。
+## KF、EKF、IEKF、UKF卡尔曼滤波器：https://blog.csdn.net/m_buddy/article/details/127081220?ops_request_misc=elastic_search_misc&request_id=c2b34b1a23be8797abab77f7b63a358e&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-127081220-null-null.142^v102^pc_search_result_base3&utm_term=iekf&spm=1018.2226.3001.4187
